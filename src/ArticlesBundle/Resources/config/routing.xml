@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<routes xmlns="http://symfony.com/schema/routing"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/routing http://symfony.com/schema/routing/routing-1.0.xsd">
+
+    <import resource="@ArticlesBundle/Resources/config/formulaire_routing.xml" />
+
+    <route id="articles_homepage" path="/">
+        <default key="_controller">ArticlesBundle:Default:index</default>
+    </route>
+    <route id="articles_affiche_cirques" path="/affiche_cirques">
+        <default key="_controller">ArticlesBundle:Default:affiche</default>
+    </route>
+
+    <route id="article_affiche_volcan" path="/affiche_volcan">
+        <default key="_controller">ArticlesBundle:Default:afficheVolcan</default>
+    </route>
+
+    <route id="articles_affiche_plages" path="/affiche_plages">
+        <default key="_controller">ArticlesBundle:Default:affichePlages</default>
+    </route>
+</routes>

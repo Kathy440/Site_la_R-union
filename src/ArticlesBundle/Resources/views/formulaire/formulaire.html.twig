@@ -1,0 +1,81 @@
+{% extends '@Articles/Default/base.html.twig' %}
+
+{% block body %}
+
+    <div class="slide-articles">
+        <div class="bxslider">
+            <div>
+                <img src="https://invictus-travel.com/site/wp-content/uploads/2016/09/dest-874dge.jpg"
+                     alt="cascade dans la montagne">
+            </div>
+            <div>
+                <img src="http://blogovoyage.fr/wp-content/uploads/2012/11/La-Plaine-des-Cafres-avec-le-Piton-des-Neiges-en-arri%C3%A8re-plan.jpg"
+                     alt="La Plaine des Cafres avec le Piton des Neiges en arrière-plan">
+            </div>
+            <div>
+                <img src="https://www.ote.re/sites/default/files/h5p/content/2924/images/backgroundImage-5940dd85a1dfc.jpg"
+                     alt="Tortue dans la mer">
+            </div>
+            <div>
+                <img src="http://chacunsonile.ca/media/cache/92/56/92561ce7fed444f0d64781a7d46d1bd8.jpg"
+                     alt="Cascade voile de la mariée ">
+            </div>
+            <div>
+                <img src="http://www.jerome-narcy.com/wp-content/26-octobre-2011-8h43.jpg"
+                     alt="Réunion au sommet">
+            </div>
+            <div>
+                <img src="http://dronereunion.com/wp-content/uploads/2016/11/BOUCAN-03-2.jpg"
+                     alt="Plage St-Leu  ">
+            </div>
+        </div>
+    </div>
+
+    <table class="table">
+        <tr class="trait">
+
+            <th class="trait">Pseudo</th>
+            <th class="trait">Lieux</th>
+            <th class="trait">Description</th>
+            <th class="trait">Modifier</th>
+            <th class="trait">Supprimer</th>
+
+
+        </tr>
+        {% for article in articles  %}
+            <tr>
+
+                <td class="trait">{{ article.pseudo }}</td>
+                <td class="trait">{{ article.lieux}}</td>
+                <td class="trait">{{ article.description }}</td>
+                <td class="trait">
+                    <a class="couleur-lien"
+                       href="{{ path('artciles_modifie_formulaire', {'id': article.id }) }}">Modifier
+                    </a>
+                </td>
+
+
+                <td class="trait">
+                    <a class="couleur-lien"
+                       href="{{ path('article_suprime_formulaire', {'id': article.id }) }}">Suprimer
+                    </a>
+                </td>
+            </tr>
+        {% endfor %}
+    </table>
+
+        <h1 class="description-titre">Partager votre avis</h1>
+
+        <a href="{{ path('articles_formulaire') }}">
+            <button class="bouton-retour bouton-centrer">Partager votre avis :) </button>
+        </a>
+
+        <a href="#" id="return-to-top" class="scrollToTop">
+            <i class="fas fa-4x fa-angle-up">
+            </i>
+        </a>
+
+
+
+
+{% endblock %}

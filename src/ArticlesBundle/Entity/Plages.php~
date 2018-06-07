@@ -1,0 +1,140 @@
+<?php
+
+namespace ArticlesBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Plages
+ *
+ * @ORM\Table(name="plages")
+ * @ORM\Entity(repositoryClass="ArticlesBundle\Repository\PlagesRepository")
+ */
+class Plages
+{
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    private $id;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="lieux", type="string", length=255)
+     */
+    private $lieux;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="descrption", type="text")
+     */
+    private $descrption;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="images", type="text")
+     */
+    private $images;
+
+
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="pseudo", type="string",  length=255)
+     */
+
+     private $pseudo;
+
+
+    /**
+     * Get id
+     *
+     * @return int
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set lieux
+     *
+     * @param string $lieux
+     *
+     * @return Plages
+     */
+    public function setLieux($lieux)
+    {
+        $this->lieux = $lieux;
+
+        return $this;
+    }
+
+    /**
+     * Get lieux
+     *
+     * @return string
+     */
+    public function getLieux()
+    {
+        return $this->lieux;
+    }
+
+    /**
+     * Set descrption
+     *
+     * @param string $descrption
+     *
+     * @return Plages
+     */
+    public function setDescrption($descrption)
+    {
+        $this->descrption = $descrption;
+
+        return $this;
+    }
+
+    /**
+     * Get descrption
+     *
+     * @return string
+     */
+    public function getDescrption()
+    {
+        return $this->descrption;
+    }
+
+    /**
+     * Set images
+     *
+     * @param string $images
+     *
+     * @return Plages
+     */
+    public function setImages($images)
+    {
+        $this->images = $images;
+
+        return $this;
+    }
+
+    /**
+     * Get images
+     *
+     * @return string
+     */
+    public function getImages()
+    {
+        return $this->images;
+    }
+
+
+
+}

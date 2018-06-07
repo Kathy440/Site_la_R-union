@@ -1,0 +1,63 @@
+<header class="header">
+
+    <h1>Lieux à visiter sur l'Ile De La Réunion</h1>
+
+    <div class="dropdown">
+        <a href="{{ path('articles_homepage') }}">
+            <button class="dropbtn">Accueil</button>
+        </a>
+    </div>
+    
+    <div class="dropdown">
+        <button class="dropbtn dropbtn-color-1">Volcan</button>
+        <div class="dropdown-content">
+
+            <a href="{{ path('article_affiche_volcan') }}#1">
+                Piton de la Fournaise
+            </a>
+            <a href="{{ path('article_affiche_volcan') }}#2">
+                Piton des Neiges
+            </a>
+
+            <a href="{{ path('article_affiche_volcan') }}#3">
+                La route des Laves
+            </a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button class="dropbtn"> Les Cirques</button>
+        <div class="dropdown-content">
+            <a href="{{ path('articles_affiche_cirques') }}#1">Cilaos</a>
+            <a href="{{ path('articles_affiche_cirques') }}#2">Mafate</a>
+            <a href="{{ path('articles_affiche_cirques') }}#3">Salazie</a>
+        </div>
+    </div>
+
+
+    <div class="dropdown">
+        <button class="dropbtn dropbtn-color-2">Les plages</button>
+        <div class="dropdown-content">
+            <a href="{{ path('articles_affiche_plages') }}#1">Plage de l'Hermitage</a>
+            <a href="{{ path('articles_affiche_plages') }}#2">Plage de Boucan Canot</a>
+            <a href="{{ path('articles_affiche_plages') }}#3">Plage de l'Etang-Salé</a>
+            <a href="{{ path('articles_affiche_plages') }}#4">Plage de Grande-Anse</a>
+            <a href="{{ path('articles_affiche_plages') }}#5">Plage de Saint-Pierre</a>
+            <a href="{{ path('articles_affiche_plages') }}#6">Plage de la Souris chaude</a>
+        </div>
+    </div>
+
+
+
+
+    <div class="dropdown">
+        <a href="{{ path('articles_affiche_articles') }}">
+            <button class="dropbtn dropbtn-color-3">Voir les avis</button>
+        </a>
+    </div>
+
+
+    <img class="header-img" src="http://www.stickerspei.re/32-133-thickbox/974-camille.jpg" alt="logo 974">
+
+
+</header>

@@ -1,0 +1,40 @@
+{% extends '@Articles/Default/base.html.twig' %}
+
+{% block body %}
+
+<div class="body-container">
+    {% for toutLesArticles in plages %}
+
+        <div data-aos="top-center">
+        <h1 class="nom_plages" id="{{ toutLesArticles.id }}">{{ toutLesArticles.lieux }}</h1>
+        <p class="animated bounceInLeft">{{ toutLesArticles.description }}</p>
+        <img class="imgage-body" src="{{ toutLesArticles.images }}" alt="photo des différentes plages">
+        </div>
+
+    {% endfor %}
+
+    <a href="#" id="return-to-top" class="scrollToTop">
+        <i class="fas fa-4x fa-angle-up">
+        </i>
+    </a>
+
+
+    <div class="map-responsive">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d119144.04881386919!2d55.266018!3d-21.062614!3m2!1i1024!2i768!4f13.1!2m1!1sR%C3%A9union+les+plages!5e0!3m2!1sfr!2sus!4v1526905799394" width="600" height="450" frameborder="0" style="border:0" allowfullscreen>
+        </iframe>
+    </div>
+
+        <a href="{{ path('articles_homepage') }}">
+        <button class="bouton-retour ">Retour à l'accueil</button>
+        </a>
+
+</div>
+{% endblock %}
+
+
+
+
+
+
+
+

@@ -1,0 +1,62 @@
+{% extends '@Articles/Default/base.html.twig' %}
+
+    {% block body %}
+
+            {{ form_start(form)}}
+
+        <div class="container-formulaire">
+            <div class="form-group ">
+                <div class="form-group col-md-6 test">
+
+                    {{ form_label(form.pseudo, 'Votre nom') }}
+                    {{ form_widget(form.pseudo, {
+                        'attr': {
+                            'class': "ma_class",
+                            'placeholder': "entrer un pseudo"}
+                    }
+                    ) }}
+                    {{ form_errors(form.pseudo) }}
+                </div>
+
+                <div class="form-group col-md-6 test">
+                    {{ form_label(form.lieux) }}
+                    {{ form_widget(form.lieux, {
+                        'attr': {
+                            'placeholder': "l'endroit que vous avez préferer"}
+                    }
+                    ) }}
+                    {{ form_errors(form.lieux) }}
+                </div>
+
+
+                <div class="form-group col-md-6 test">
+                    {{ form_label(form.description) }}
+                    {{ form_widget(form.description, {
+                        'attr': {
+                            'placeholder': "dite nous plus"}
+                    }
+                    ) }}
+                    {{ form_errors(form.description) }}
+                </div>
+
+
+                <div class="btn  test">
+                    {{ form_label(form.envoyer, 'Envoyer') }}
+                    {{ form_widget(form.envoyer) }}
+                </div>
+            </div>
+        </div>
+            {{ form_end(form) }}
+
+
+            <a href="#" id="return-to-top" class="scrollToTop">
+                <i class="fas fa-4x fa-angle-up">
+                </i>
+            </a>
+
+            <a href="{{ path('articles_affiche_articles') }}">
+                <button class="bouton-retour test btn-valider">Revoir les formulaires</button>
+            </a>
+
+
+    {% endblock %}

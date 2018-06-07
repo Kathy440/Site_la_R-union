@@ -1,0 +1,349 @@
+                                        /* * * * * * *
+                                        CSS NavBar    *
+                                        * * * * * * * */
+.dropbtn {
+    background-color: black;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn1{
+    background-color: black;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    z-index: 9999;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+                                        /* * * * * * * * * * *
+                                        * CSS BOUTON HOVER   *
+                                        * * * * * * * * * * */
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: darkgreen;
+}
+
+.dropdown:hover .dropbtn-color-1 {
+    background-color: red;
+}
+
+.dropdown:hover .dropbtn-color-2{
+    background-color: dodgerblue;
+}
+
+.dropdown:hover .dropbtn-color-3{
+    background-color: lightskyblue;
+}
+
+/* * * * * * * *
+ * CSS BOUTON *
+ * * * * * * */
+
+.bouton-retour{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.bouton-centrer {
+    display: block;
+    margin : auto;
+}
+
+.btn-valider{
+    margin-top: 15px;
+}
+
+
+                                        /* * * * * * * * * * * * * *
+                                         * * *      header      * * * *
+                                         * * * * * * * * * * * * * * */
+.header{
+    text-align : center;
+    width: 100%;
+    margin-bottom: 300px;
+   background-color: #ffffff5e;
+
+}
+.header-img{
+    width: 3%;
+}
+
+                                        /* * * * * * * * * * * * * *
+                                    * * * *     FIN CSS header   * * * *
+                                        * * * * * * * * * * * * * * */
+
+
+                                                    /* * * * * *
+                                                     * Footer   *
+                                                     * * * * * */
+.footer{
+    background-color: black;
+
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+}
+
+
+
+/* * * * * * *
+ Css Cirques *
+ * * * * * * */
+
+.nom_cirques{
+    color: green;
+    text-align: center;
+
+}
+/* * * * * *
+ CSS VOLCAN *
+ * * * * * */
+
+.nom_volcan{
+    text-align: center;
+    color: red;
+}
+
+/* * * * * *
+ CSS PLAGES *
+ * * * * * */
+.nom_plages{
+    text-align: center;
+    color: mediumblue;
+}
+
+
+                                        /* * * * * * * * * * * * *
+                                        *                        *
+                                        * CSS Body               *
+                                        *                        *
+                                         * * * * * * * * * * * * */
+
+.body-all {
+margin: 0;
+background-image: url("https://www.reunion.fr/sites/crt-reunion/files/styles/gallery_lightbox/public/content/images/reveal_lagon_8m2_300dpi_1200_1.jpg?itok=3l5S1fI0");
+background-repeat:no-repeat;
+background-attachment:fixed;
+background-size: cover;
+background-position: center;
+}
+
+
+.description{
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+
+}
+
+.description-titre{
+    text-align: center;
+}
+
+.body-container{
+    background-color: white;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 20px;
+}
+
+.description-block{
+    background-color: #ffffffd1;
+    text-align: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+
+.imgage-body{
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.data-aos,slide-right {
+    transform: none;
+}
+
+
+                                        /* * * * * * * * * *
+                                         * FIN CSS Body    *
+                                         * * * * * * * * * * /
+
+/* * * * * * *
+ * CSS JS    *
+ * * * * * * */
+
+.scrollToTop {
+    width: 100px;
+    height: 130px;
+    padding: 10px;
+    text-align: center;
+    background: whiteSmoke;
+    font-weight: bold;
+    color: yellow;
+    text-decoration: none;
+    position: fixed;
+    bottom: 0;
+    right: 40px;
+    display: none;
+    background: url("arrow_up.png") no-repeat 0px 20px; /*Si y pas celui la il y aura un carre blanc autour de la fleche */
+}
+
+.mini-map{
+    height:105px;
+    width:164px;
+    background-image:url(//www.google.com/maps/vt/data=vxZYJ1zKoQxQhKoW1fmAmfoXSJCaKjiSz1hegnAmUhXZ0-Uj0E9RaCiO-JfzPNkG2WNaBmhmv_VovdVlPOMiJpzoenuFXWwUhF-s03wM97iUPkBvIeHAEIZlYQ)"
+
+}
+.map-responsive {
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+    
+.map-responsive iframe {
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+
+
+
+/* * * * * * * * * *
+ * CSS Formulaire  *
+ * * * * * * * * * */
+
+.container-formulaire{
+    background-color: #39a689e0;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+
+
+.slide-form{
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+}
+
+.slide-articles{
+    width: 100%;
+}
+
+.bx-wrapper {
+    max-width: 80% !important; /*permet de spécifier que la propriété est la plus importante */
+    width: 100% !important;
+}
+
+.bx-wrapper img {
+    width: 100% !important;
+}
+
+.bx-wrapper{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.test{
+    display: block;
+    margin : auto;
+    margin-top: 10px;
+}
+
+
+
+@keyframes slidein { /*via la règle */
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+
+}
+
+/* * * * * * *
+CSS TABLEAU  *
+ * * * * * * */
+
+.table{
+    font-family: monospace;
+    border: thin solid #6495ed;
+    padding: 5px;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:#1b1e21;
+}
+
+.trait{
+    border: 1px solid black;
+    font-family: monospace;
+}
+
+.table th, .table td{
+    color: white;
+}
+
+.couleur-lien{
+    color:  aliceblue;
+
+}

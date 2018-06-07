@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<routes xmlns="http://symfony.com/schema/routing"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://symfony.com/schema/routing http://symfony.com/schema/routing/routing-1.0.xsd">
+
+    <route id="articles_affiche_articles" path="/affiche_articles">
+        <default key="_controller">ArticlesBundle:Form:allArticles</default>
+    </route>
+
+    <route id="articles_formulaire" path="/ajoute_avis">
+        <default key="_controller">ArticlesBundle:Form:addForm</default>
+    </route>
+
+    <route id="artciles_modifie_formulaire" path="/formulaire_modif/{id}">
+        <default key="_controller">ArticlesBundle:Form:updateForm</default>
+    </route>
+
+    <route id="article_suprime_formulaire" path="/formulaire_suprime/{id}">
+        <default key="_controller">ArticlesBundle:Form:removeId</default>
+        <default key="id"> </default>
+    </route>
+
+</routes>
